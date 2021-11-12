@@ -98,11 +98,13 @@ body {
 @media only screen and (max-width: 425px) {
   .container {
     width: 100%; }
-  .itemContainer {
+  .app {
     min-height: 100vh; } }
 
 @media only screen and (max-width: 350px) {
   .itemName {
     margin-left: 1rem; }
   .action {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .app {
+    min-height: 100vh; } }
