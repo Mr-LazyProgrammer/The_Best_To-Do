@@ -97,7 +97,8 @@ body {
 
 @media only screen and (max-width: 425px) {
   .container {
-    width: 100%;
+    width: 100%; }
+  .itemContainer {
     min-height: 100vh; } }
 
 @media only screen and (max-width: 350px) {
