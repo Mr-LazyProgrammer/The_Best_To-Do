@@ -1,7 +1,6 @@
 header {
   display: flex;
-  justify-content: space-between;
-  height: 15vh; }
+  justify-content: space-between; }
   header .logo {
     padding: 2rem;
     font-size: 1.2rem; }
@@ -97,10 +96,9 @@ body {
   align-items: center; }
 
 @media only screen and (max-width: 425px) {
-  header {
-    height: 15vh; }
   .container {
-    width: 100%; } }
+    width: 100%;
+    min-height: 100vh; } }
 
 @media only screen and (max-width: 350px) {
   .itemName {
