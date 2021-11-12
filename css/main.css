@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  justify-content: space-between; }
+  header .logo {
+    padding: 2rem;
+    font-size: 1.2rem; }
+  header nav i {
+    font-size: 1.8rem;
+    margin: 2rem;
+    color: black; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .container .app {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #aca8a8;
+    border-radius: 5px; }
+    .container .app .head {
+      width: 100%;
+      background-color: black;
+      color: white; }
+      .container .app .head h3 {
+        padding: 1.5rem; }
+    .container .app .itemContainer {
+      padding-top: 0.4rem;
+      flex-direction: column; }
+      .container .app .itemContainer .item {
+        border: 1px solid #aca8a8;
+        width: 95%;
+        height: 3rem;
+        margin-bottom: 0.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .container .app .itemContainer .item .itemName {
+          display: flex;
+          align-items: center;
+          margin-left: 2rem; }
+        .container .app .itemContainer .item .action {
+          margin-right: 2rem;
+          display: flex;
+          align-items: center; }
+          .container .app .itemContainer .item .action input {
+            width: 1.3rem;
+            height: 1.3rem; }
+          .container .app .itemContainer .item .action i {
+            margin-left: 1rem;
+            font-size: 1.3rem;
+            cursor: pointer; }
+        .container .app .itemContainer .item .strikeThrough {
+          text-decoration: line-through; }
+    .container .app .bottomBar {
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: "input input input input input add";
+      align-items: center;
+      background-color: black;
+      bottom: 0;
+      height: 3.5rem;
+      width: 100%; }
+      .container .app .bottomBar input {
+        grid-area: input;
+        margin-left: 0.4rem;
+        height: 2.3rem;
+        background-color: #dddddd;
+        color: black;
+        padding-left: 1rem;
+        border: none; }
+      .container .app .bottomBar input:focus {
+        outline: none; }
+      .container .app .bottomBar .add {
+        grid-area: add; }
+        .container .app .bottomBar .add i {
+          color: white;
+          font-size: 1.5rem;
+          cursor: pointer; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: #fffffe;
+  color: black; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%; } }
+
+@media only screen and (max-width: 350px) {
+  .itemName {
+    margin-left: 1rem; }
+  .action {
+    margin-right: 1rem; } }
